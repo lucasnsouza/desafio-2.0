@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Lucas\\Procedo\\": "src/"
+        }
+    },
+    "require": {
+        "doctrine/orm": "^2.10",
+        "symfony/cache": "^5.3",
+        "nyholm/psr7": "^1.4",
+        "nyholm/psr7-server": "^1.0",
+        "psr/http-server-handler": "^1.0",
+        "php-di/php-di": "^6.3",
+        "phpmailer/phpmailer": "^6.5"
+    }
+}

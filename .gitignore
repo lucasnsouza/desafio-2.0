@@ -1,0 +1,4 @@
+#ignorar depedências
+vendor/
+#ignorar configurações do e-mail
+Suport/
