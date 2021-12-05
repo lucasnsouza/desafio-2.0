@@ -51,11 +51,18 @@ class EmailParaSenha extends Email implements RequestHandlerInterface
             );
             return $resposta;
         }
+        
+        $msgHtml = '
+            <h1>Clique para cadastrar nova senha</h1>
+            <p>Clique no link abaixo para cadastrar sua nova senha.</p>
+            <p>Clique no link para <a href="http://localhost:8001/nova-senha">recuperar sua senha.</a></p>
+            <p>Se você não solicitou esse e-mail, ignore a mensagem.</p>
+        ';
 
         $email = new Email();
         $email->adicionaMensagem(
             'E-mail teste',
-            'Teste de envio de e-mails com phpmailer.',
+            $msgHtml,
             'Lucas Souza',
             $emailDoUsuario
         )->enviaEmail();
